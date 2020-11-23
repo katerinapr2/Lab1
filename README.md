@@ -65,7 +65,7 @@
 	πιο περίπλοκο στην αρχιτεκτονική του και βοηθά στο να προσομοιώνουμε 
 	την μικρο-αρχιτεκτονική επεξεργαστών με αντίστοιχες δυνατότητες. 
 
-   _a)_ _TimingSimpleCPU_:
+   _a)_ _TimingSimpleCPU_:  
         final_tick 39989000                    
         host_seconds 0.09  
         sim_seconds 0.000040   
@@ -80,7 +80,7 @@
    _c)_  
 * Αλλαγή στο **cpu-clock**=1GHz:
 
-	_TimingSimpleCPU_ : 
+	_TimingSimpleCPU_ :   
 	    final_ticks 54995000    
      	host_seconds 0.04    
 	    sim_seconds 0.000055      
@@ -94,7 +94,7 @@
 
 * Αλλαγή στην **συχνότητα λειτουργίας συστήματος**=500MHz:
 	
- 	_TimingSimpleCPU_:
+ 	_TimingSimpleCPU_:  
 	final_ticks 46159000  
 	host_seconds 0.05  
 	sim_seconds 0.000046  
@@ -108,7 +108,7 @@
       
 * Αλλαγή στην **τεχνολογία μνήμης** = DDR3_2133_8x8 :
 	
-	_TimingSimpleCPU_:   
+	_TimingSimpleCPU_:     
             final_tick 38458000  
 	    host_seconds 0.04  
 	    sim_seconds 0.000038  
