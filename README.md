@@ -85,21 +85,25 @@
      	host_seconds 0.04    
 	    sim_seconds 0.000055      
   
-	_MinorCPU_ :  
+	_MinorCPU_ :    
     	final_ticks 41480000    
     	host_seconds 0.10    
-      sim_seconds 0.000041    
+      sim_seconds 0.000041   
+      
   Παρατηρούμε πως μειώνοντας το cpu-clock αυξάνεται ο χρόνος εκτέλεσης.	
 
 * Αλλαγή στην **συχνότητα λειτουργίας συστήματος**=500MHz:
 	
- 	_TimingSimpleCPU_: final_ticks 46159000  
-			  host_seconds 0.05  
-			  sim_seconds 0.000046  
+ 	_TimingSimpleCPU_:
+	final_ticks 46159000  
+	host_seconds 0.05  
+	sim_seconds 0.000046  
 	
-    _MinorCPU_: final_ticks  40024000  
-		   host_seconds 0.13  
-		   sim_seconds 0.000040  
+    _MinorCPU_:     
+    final_ticks  40024000  
+    host_seconds 0.13  
+    sim_seconds 0.000040  
+    
 Παρατηρούμε πως με την μείωση της συχνότητας λειτουργίας συστήματος, αυξάνεται ο χρόνος εκτέλεσης.
       
 * Αλλαγή στην **τεχνολογία μνήμης** = DDR3_2133_8x8 :
@@ -109,9 +113,11 @@
 	    host_seconds 0.04  
 	    sim_seconds 0.000038  
 	
-    _MinorCPU_: final_tick 32931000  
-		   host_seconds 0.13  
-		   sim_seconds 0.000033  
+    _MinorCPU_:   
+    final_tick 32931000  
+    host_seconds 0.13  
+    sim_seconds 0.000033  
+    
 Παρατηρούμε πως σε σχέση με την DDR3_1600_8x8, η DDR3_2133_8x8 είναι πιο γρήγορη.
 
 ##### Κριτική εργασίας:   
