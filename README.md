@@ -35,10 +35,9 @@
     	ranks_per_channel=2  
         range=0:2147483648  
 
-  _b)_ Το συνολικό νούμερο των _committed εντολών_ από το _stats.txt_: _system.cpu_cluster.cpus.committedInsts_  είναι 5028. 
-  Στο αρχείο _config.ini_ παρουσιάζονται οι εντολές που χρειάζονται για να προσομοιωθεί το σύστημα, ενώ στο αρχείο _stats.txt_ παρουσιάζονται ο αριθμός των συνολικών εντολών που χρειάστηκαν για ολοκληρωθεί το πρόγραμμα "Hello World".
+  _b)_ Το συνολικό νούμερο των _committed instructions_ ( _system.cpu_cluster.cpus.committedInsts_ ) είναι 5028, ενώ των _commited operations_ ( _system.cpu_cluster.cpus.committedOps_ ) είναι 5834 και συμβολίζει τον αριθμό των μικρο-λειτουργιών. Επειδή κάθε εντολή που εκτελείται επεκτείνεται σε μικρο-λειτουργίες, ο αριθμός των commitedOps ειναι πάντα μεγαλύτερος ή ίσος από τον commitedInsts.  
 
-  c)Οι προσπελάσεις της L2 cache από το _stats.txt_: _system.cpu_cluster.l2.overall_accesses::total_ είναι 479.  Αν δεν παρεχόταν από τον εξομοιωτή οι προσπελάσεις της L2 Cache, θα μπορούσαμε να τις υπολογίσουμε προσθέτοντας τα misses της icache(332) και dcache (179).
+  c)Οι προσπελάσεις της L2 cache από το _stats.txt_: _system.cpu_cluster.l2.overall_accesses::total_ είναι 479.  Αν δεν παρεχόταν από τον εξομοιωτή οι προσπελάσεις της L2 Cache, θα μπορούσαμε να τις υπολογίσουμε προσθέτοντας τα συνολικά misses της icache(332) και dcache (147).
 
 **3.** 
 **SimpleCPU**:
